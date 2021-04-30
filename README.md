@@ -65,7 +65,7 @@ The results shown above is anti-intuitive since performance of both `CNN` and `I
 ## 1.4 Analysis of _DeepWeed_
 ### 1.4.1 Exploratory analysis
 The 'DeepWeed' data set has total of 9 classes, including negatives. There are 10504 images for training, 3502 images for validation, and 3503 images for testing. The images were originally sized to 256*256, they are corped to 224*224 during the training, like what is done in the 'DeepWeed' paper
-### 1.4.2 CNN set up and results
+### 1.4.2  CNN balanced dataset setup
 For the balance dataset, we used the same model set up with the unbalanced data set. There are total of 100 epochs was done. The batch size was seteed to 32.
 <p align="center">
 <img src="doc/Deep_CNN4.PNG" width="600">
@@ -87,7 +87,7 @@ For the balance dataset, we used the same model set up with the unbalanced data 
 </p>
 Overall, the result of the CNN classifier trained on the DeepWeed data set is not bad.
 
-### 1.4.4 Inception set up
+### 1.4.4 Inception balanced dataset setup
 For the training using Inception-V2 on the balanced dataset 'DeepWeed'. We performed 50 epochs, and the batch size was seted to 32.
 
 ### 1.4.5 Inception balanced dataset result
@@ -103,7 +103,7 @@ For the training using Inception-V2 on the balanced dataset 'DeepWeed'. We perfo
 <img src="doc/Deep_INC3.PNG" width="600"><br>
 <b>scores & confusion matrix</b>
 </p>
-
+The result of Inception-v2 model is significanlty better than the CNN model.
 # Usage
 
 
