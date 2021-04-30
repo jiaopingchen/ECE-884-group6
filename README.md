@@ -65,6 +65,8 @@ Below is the plot of sample sizes of all 12 classes
 <img src="doc/Deep_CNN4.png" width="600">
 </p>
 
+### 1.4.2 CNN result
+
 # Usage
 
 
