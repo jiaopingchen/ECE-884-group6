@@ -6,7 +6,7 @@
 Robotic weed/plant control, which is to use a camera-based machine vision system to detect crop plants and weeds. It helps to reduce both the labor cost and herbicide usage. The ability to conduct fast and accurate method in differentiating weed and corp seedlings can help farmers to efficiently maintain environment of farm. 
 
 ## 1.2 Dataset
-Two good examples of such application are _DeepWeeds_ and _Plant seedlings_.
+Two good examples of such application are `DeepWeeds` and `Plant seedlings`.
 
 The `DeepWeeds` is a balanced dataset (_https://www.tensorflow.org/datasets/catalog/deep_weeds_) that has 17,509 labelled images of 8 nationally significant weed species native to 8 locations across northern Australia. 
 
@@ -51,20 +51,19 @@ Due to limited training set of only 3800 images, we decided to enlarge the datas
 We build two image classifiers `CNN` and `Inception-ResNet v2` that can label various types of plant/weed images with the highest accuracy being 93.2%.
 
 ### 1.3.5 Result
+Method | Test accuracy
+--- | ---
+CNN | 88.38%
+Inception-ResNet v2 | 93.77%
+CNN + Oversample | 85.21%
+Inception-ResNet v2 + Oversample | 92.93%
+CNN + Oversample + Data augmentation | 84.58%
+Inception-ResNet v2 + Oversample + Data augmentation | 90.71%
 
-The results show that classification accuracy of both CNN and inception-ResNetv2 decreased after applying data augmentation technique. The reason for this disappointing result is likely due to bias of augmented images, which could be possibly corrected by increase number of augmented images or using WeMix[1].
+The results shown above is anti-intuitive since performance of both `CNN` and `Inception-ResNet v2` decrease as we applied several conventional techniques to resolve unbalancing and limited sample size issues. The reason for this disappointing result is likely due to the bias of oversampled training set, based on which augmented images were generated. Such bias could be circumvented in **Oversampling** step by choosing more rigorous technique such as Synthetic Minority Oversampling Technique (SMOTE) and in **Data augmentation** step by increasing number of augmented images or using state-of-the-art algorithms such as GAN and WeMix[1].
 
 ## 1.4 Analysis of _DeepWeed_
-### 1.4.1 Exploratory analysis
-The `DeepWeeds` data set has 9 Classes, including negatives. There are 10504 images for training, 3502 images for validation, and 3503 images for testing. The images was originally sized oiginally 256*256,during the training they are corped to 224*224, like what they did in the 'DeepWeeds' paper.
-### 1.4.2 CNN set up
-For the `CNN` classifier, it is seted up the same with the unbalanced data set. There are 100 epoch was done.
-Below is the plot of sample sizes of all 12 classes
-<p align="center">
-<img src="doc/Deep_CNN4.PNG" width="600">
-</p>
 
-### 1.4.2 CNN result
 
 # Usage
 
