@@ -20,12 +20,33 @@ We preprocess the 4750 images by resizing (150 x 150), masking, transforming to 
 
 From the resulting plot above, it can be observed that 4750 images with 12 labels are well mixed and hard to differentiate by simply projecting images to 2-dim space.
 
-### 1.3.1 Oversampling minority classes
+### 1.3.2 Oversampling minority classes
+Below is the plot of sample sizes of all 12 classes
+<p align="center">
+<img src="doc/sample_sizes.png" width="600">
+</p>
 
-### 1.3.2 Data augmentation
+It can be observed from the plot that the dataset is unbalanced. With more than 600 images in class _Loose silky bent_ while only around 200 images in classes such as _Malze_.
 
-### 1.3.3 Classifier
-To achieve the goal of correctly classifying an unseen plant/weed to one of 12/8 species, we build image classifiers that can label various types of plant/weed images correctly. In this study, we will consider two sets of image datasets, one balanced and one unbalanced.
+To overcome this unbalancing issue, we tried to balance the dataset by oversampling 40~60 images from minority classes (e.g. plant _Malze_) and apply each of the following image transformations:
+- Keep only red channel
+- Keep only green channel
+- Keep only blue channel
+- Unsharp
+
+### 1.3.3 Data augmentation
+Due to limited training set of only 3800 images, we decided to enlarge the dataset with augmented images. Therefore, following the _Oversampling_ step, the dataset was enlarged with augmented images acquired by randomly drawing 300 images from each class and randomly apply one of the following transformations:
+- Rotation
+- Flip
+- Add Gaussian noise
+
+
+### 1.3.4 Classifier
+We build two image classifiers `CNN` and `Inception-ResNet v2` that can label various types of plant/weed images with the highest accuracy being 93.2%.
+
+### 1.3.5 Result
+
+The results show that classification accuracy of both CNN and inception-ResNetv2 decreased after applying data augmentation technique. The reason for this disappointing result is likely due to bias of augmented images, which could be possibly corrected by increase number of augmented images or using WeMix[1].
 
 ## 1.4 Analysis of _DeepWeed_
 
@@ -33,9 +54,8 @@ To achieve the goal of correctly classifying an unseen plant/weed to one of 12/8
 # Usage
 
 
-# Results
 
-The results show that classification accuracy of both CNN and inception-ResNetv2 decreased after applying data augmentation technique. The reason for this disappointing result is likely due to bias of augmented images, which could be possibly corrected by increase number of augmented images or using WeMix[1].
+
 
 # References
 [1] Xu. et al, “WeMix: How to Better Utilize Data Augmentation” arXiv:2010.01267 [cs], Oct. 2020.
