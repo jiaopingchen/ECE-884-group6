@@ -68,7 +68,7 @@ The 'DeepWeed' data set has total of 9 classes, including negatives. There are 1
 ### 1.4.2 CNN set up
 For the balance dataset, we used the same model set up with the unbalanced data set. There are total of 100 epochs was done. The batch size was seteed to 32.
 <p align="center">
-<img src="doc/Deep_CNN4.png" width="600">
+<img src="doc/Deep_CNN4.PNG" width="600">
 </p>
 
 # Usage
