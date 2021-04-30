@@ -104,7 +104,9 @@ For the training using Inception-V2 on the balanced dataset 'DeepWeed'. We perfo
 <b>scores & confusion matrix</b>
 </p>
 The result of Inception-v2 model is significanlty better than the CNN model.
-# Usage
+
+### 1.4.6 Conclusion
+The pretrained model Inception-v2 shows significantly improvement over the CNN model. There is a 13% accuracy increase. At the same time, the Inception_v2 only trained for 50 epochs, it is less time consuming than the CNN model to achieve a same or better accuracy.
 
 
 
