@@ -8,9 +8,9 @@ Robotic weed/plant control, which is to use a camera-based machine vision system
 ## 1.2 Dataset
 Two good examples of such application are `DeepWeeds` and `Plant seedlings`.
 
-The `DeepWeeds` is a balanced dataset (_https://www.tensorflow.org/datasets/catalog/deep_weeds_) that has 17,509 labelled images of 8 nationally significant weed species native to 8 locations across northern Australia. 
+[DeepWeeds](https://www.tensorflow.org/datasets/catalog/deep_weeds)[1] is a balanced dataset that has 17,509 labelled images of 8 nationally significant weed species native to 8 locations across northern Australia. 
 
-`Plant seedlings` is a unbalanced dataset (_https://www.kaggle.com/c/plant-seedlings-classification_) including images of approximately 960 unique plants belonging to 12 species at several growth stages (4750 images in total). 
+[Plant seedlings](https://www.kaggle.com/c/plant-seedlings-classification)[2] is a unbalanced dataset including images of approximately 960 unique plants belonging to 12 species at several growth stages (4750 images in total). 
 
 ## 1.3 Analysis of _Plant seedlings_
 ### 1.3.1 Exploratory analysis
@@ -60,7 +60,7 @@ Inception-ResNet v2 + Oversample | 92.93%
 CNN + Oversample + Data augmentation | 84.58%
 Inception-ResNet v2 + Oversample + Data augmentation | 90.71%
 
-The results shown above is anti-intuitive since performance of both `CNN` and `Inception-ResNet v2` decrease as we applied several conventional techniques to resolve unbalancing and limited sample size issues. The reason for this disappointing result is likely due to the bias of oversampled training set, based on which augmented images were generated. Such bias could be circumvented in **Oversampling** step by choosing more rigorous technique such as Synthetic Minority Oversampling Technique (SMOTE) and in **Data augmentation** step by increasing number of augmented images or using state-of-the-art algorithms such as GAN and WeMix[1].
+The results shown above is anti-intuitive since performance of both `CNN` and `Inception-ResNet v2` decrease as we applied several conventional techniques to resolve unbalancing and limited sample size issues. The reason for this disappointing result is likely due to the bias of oversampled training set, based on which augmented images were generated. Such bias could be circumvented in **Oversampling** step by choosing more rigorous technique such as Synthetic Minority Oversampling Technique (SMOTE) and in **Data augmentation** step by increasing number of augmented images or using state-of-the-art algorithms such as [GAN](https://doi.org/10.1016/j.neucom.2018.09.013)[3] and [WeMix](https://arxiv.org/abs/2010.01267)[4].
 
 ## 1.4 Analysis of _DeepWeed_
 ### 1.4.1 Exploratory analysis
@@ -112,9 +112,14 @@ The result is the same with our expectation. The pretrained model Inception-v2 s
 
 
 # References
-T. M. Giselsson, R. N. Jørgensen, P. K. Jensen, M. Dyrmann, and H. S. Midtiby, “A Public Image Database for Benchmark of Plant Seedling Classification Algorithms,” arXiv.org, 15-Nov-2017. [Online]. Available: https://arxiv.org/abs/1711.05458.
+[1] “A. Olsen, D. A. Konovalov, B. Philippa, P. Ridd, J. C. Wood, J. Johns, W. Banks, B. Girgenti, O. Kenny, J. Whinney, B. Calvert, M. Rahimi Azghadi, and R. D. White, “DeepWeeds: A Multiclass Weed Species Image Dataset for Deep Learning,” Scientific Reports, vol. 9, no. 2058, 2 2019. [Online]. Available: https://doi.org/10.1038/s41598-018-38343-3 ”
 
-“A. Olsen, D. A. Konovalov, B. Philippa, P. Ridd, J. C. Wood, J. Johns, W. Banks, B. Girgenti, O. Kenny, J. Whinney, B. Calvert, M. Rahimi Azghadi, and R. D. White, “DeepWeeds: A Multiclass Weed Species Image Dataset for Deep Learning,” Scientific Reports, vol. 9, no. 2058, 2 2019. [Online]. Available: https://doi.org/10.1038/s41598-018-38343-3 ”
+[2] T. M. Giselsson, R. N. Jørgensen, P. K. Jensen, M. Dyrmann, and H. S. Midtiby, “A Public Image Database for Benchmark of Plant Seedling Classification Algorithms,” arXiv.org, 15-Nov-2017. [Online]. Available: https://arxiv.org/abs/1711.05458.
+
+[3] Frid-Adar, M., Diamant, I., Klang, E., Amitai, M., Goldberger, J., Greenspan, H., 2018. "GAN-based synthetic medical image augmentation for increased CNN performance in liver lesion classification," arXiv:1803.01229. [Online]. Available: https://doi.org/10.1016/j.neucom.2018.09.013
+
+[4] Yi Xu, Asaf Noy, Ming Lin, Qi Qian, Hao Li, Rong Jin, "WeMix: How to Better Utilize Data Augmentation," arXiv:2010.01267. [Online]. Available: https://arxiv.org/abs/2010.01267
+
 
 
 
