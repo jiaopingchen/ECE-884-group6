@@ -55,14 +55,13 @@ We build two image classifiers `CNN` and `Inception-ResNet v2` that can label va
 The results show that classification accuracy of both CNN and inception-ResNetv2 decreased after applying data augmentation technique. The reason for this disappointing result is likely due to bias of augmented images, which could be possibly corrected by increase number of augmented images or using WeMix[1].
 
 ## 1.4 Analysis of _DeepWeed_
-## 1.4 Analysis of _DeepWeed_
 ### 1.4.1 Exploratory analysis
 The `DeepWeeds` data set has 9 Classes, including negatives. There are 10504 images for training, 3502 images for validation, and 3503 images for testing. The images was originally sized oiginally 256*256,during the training they are corped to 224*224, like what they did in the 'DeepWeeds' paper.
 ### 1.4.2 CNN set up
 For the `CNN` classifier, it is seted up the same with the unbalanced data set. There are 100 epoch was done.
 Below is the plot of sample sizes of all 12 classes
 <p align="center">
-<img src="doc/Deep_CNN4.png" width="600">
+<img src="doc/Deep_CNN4.PNG" width="600">
 </p>
 
 ### 1.4.2 CNN result
