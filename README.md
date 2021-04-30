@@ -110,6 +110,7 @@ The result is the same with our expectation. The pretrained model Inception-v2 s
 
 
 # 2. Usage
+Python code implementation for `DeepWeeds` dataset can be found in `Deep_CNN.ipynb` and `Deep_Inception.ipynb`, for `Plant seedlings` dataset can be found in `Plant seedlings.ipynb`.
 
 
 # References
