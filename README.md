@@ -7,9 +7,9 @@ Robotic weed/plant control, which is to use a camera-based machine vision system
 
 ## 1.2 Dataset
 Two good examples of such application are _DeepWeeds_ and _Plant seedlings_.
-The _DeepWeeds_ is a balanced dataset (_https://www.tensorflow.org/datasets/catalog/deep_weeds_) that has 17,509 labelled images of 8 nationally significant weed species native to 8 locations across northern Australia. 
+The `DeepWeeds` is a balanced dataset (_https://www.tensorflow.org/datasets/catalog/deep_weeds_) that has 17,509 labelled images of 8 nationally significant weed species native to 8 locations across northern Australia. 
 
-_Plant seedlings_ is a unbalanced dataset (_https://www.kaggle.com/c/plant-seedlings-classification_) including images of approximately 960 unique plants belonging to 12 species at several growth stages (4750 images in total). 
+`Plant seedlings` is a unbalanced dataset (_https://www.kaggle.com/c/plant-seedlings-classification_) including images of approximately 960 unique plants belonging to 12 species at several growth stages (4750 images in total). 
 
 ## 1.3 Analysis of _Plant seedlings_
 ### 1.3.1 Exploratory analysis
