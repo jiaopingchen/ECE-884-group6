@@ -13,7 +13,7 @@ _Plant seedlings_ is a unbalanced dataset (_https://www.kaggle.com/c/plant-seedl
 
 ## 1.3 Analysis of _Plant seedlings_
 ### 1.3.1 Exploratory analysis
-We preprocess the 4750 images by resizing (150 x 150), masking, transforming to greyscale and feature standardization. By using PCA, each image was transformed to a 180-dim array, which was further reduced to 2D plot using t-SNE with parameter [perplexity=30]
+We preprocess the 4750 images by resizing (150 x 150), masking, transforming to greyscale and feature standardization. By using PCA, each image was transformed to a 180-dim array, which was further reduced to 2D plot using t-SNE with parameter `perplexity=30`
 ### 1.3.1 Oversampling minority classes
 
 ### 1.3.2 Data augmentation
