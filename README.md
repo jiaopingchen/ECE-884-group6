@@ -63,7 +63,13 @@ Inception-ResNet v2 + Oversample + Data augmentation | 90.71%
 The results shown above is anti-intuitive since performance of both `CNN` and `Inception-ResNet v2` decrease as we applied several conventional techniques to resolve unbalancing and limited sample size issues. The reason for this disappointing result is likely due to the bias of oversampled training set, based on which augmented images were generated. Such bias could be circumvented in **Oversampling** step by choosing more rigorous technique such as Synthetic Minority Oversampling Technique (SMOTE) and in **Data augmentation** step by increasing number of augmented images or using state-of-the-art algorithms such as GAN and WeMix[1].
 
 ## 1.4 Analysis of _DeepWeed_
-
+### 1.4.1 Exploratory analysis
+The 'DeepWeed' data set has total of 9 classes, including negatives. There are 10504 images for training, 3502 images for validation, and 3503 images for testing. The images were originally sized to 256*256, they are corped to 224*224 during the training, like what is done in the 'DeepWeed' paper
+### 1.4.2 CNN set up
+For the balance dataset, we used the same model set up with the unbalanced data set. There are total of 100 epochs was done. The batch size was seteed to 32.
+<p align="center">
+<img src="doc/Deep_CNN4.png" width="600">
+</p>
 
 # Usage
 
