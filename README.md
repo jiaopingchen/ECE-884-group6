@@ -73,18 +73,18 @@ For the balance dataset, we used the same model set up with the unbalanced data 
 
 ### 1.4.3 CNN blalnced result
 <p align="center">
-<img src="doc/Deep_CNN1.PNG" width="600" >
+<img src="doc/Deep_CNN1.PNG" width="600" ><br>
 <b>accuracy & val_accuracy vs epochs</b>
 </p>
 
 <p align="center">
-<img src="doc/Deep_CNN2.PNG" width="600">
+<img src="doc/Deep_CNN2.PNG" width="600"><br>
 <b>accuracy test result</b>
 </p>
 
 
 <p align="center">
-<img src="doc/Deep_CNN3.PNG" width="600">
+<img src="doc/Deep_CNN3.PNG" width="600"><br>
 <b>scores & confusion matrix</b>
 </p>
 
