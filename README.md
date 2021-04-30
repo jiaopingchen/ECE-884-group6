@@ -51,8 +51,16 @@ Due to limited training set of only 3800 images, we decided to enlarge the datas
 We build two image classifiers `CNN` and `Inception-ResNet v2` that can label various types of plant/weed images with the highest accuracy being 93.77%.
 
 ##### CNN
+`epoch=100` and `batch size=32` was used in training `CNN` model with the following structure:
+<p align="center">
+<img src="doc/CNN.png" width="600">
+</p>
 
 ##### Inception-ResNet v2
+`epoch=100` and `batch size=32` was used in training `Inception-ResNet v2` model with the following structure:
+<p align="center">
+<img src="doc/Inception-ResNet v2.png" width="600">
+</p>
 
 ### 1.3.5 Result
 Method | Test accuracy
