@@ -78,7 +78,12 @@ For the balance dataset, we used the same model set up with the unbalanced data 
 </figure>
 # Usage
 
-
+<figure>
+  <img
+  src="https://developer.mozilla.org/static/img/favicon144.png"
+  alt="The beautiful MDN logo.">
+  <figcaption>MDN Logo</figcaption>
+</figure>
 
 
 
