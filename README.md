@@ -24,7 +24,7 @@ From the resulting plot above, it can be observed that 4750 images with 12 label
 ### 1.3.2 Oversampling minority classes
 Below is the plot of sample sizes of all 12 classes
 <p align="center">
-<img src="doc/sample_sizes.png" width="600">
+<img src="doc/sample_sizes_nooversample.png" width="600">
 </p>
 
 It can be observed from the plot that the dataset is unbalanced. With more than 600 images in class _Loose silky bent_ while only around 200 images in classes such as _Malze_.
@@ -34,6 +34,11 @@ To overcome this unbalancing issue, we tried to balance the dataset by oversampl
 - Keep only green channel
 - Keep only blue channel
 - Unsharp
+
+After oversampling, the dataset is balanced as shown below:
+<p align="center">
+<img src="doc/sample_sizes_oversample.png" width="600">
+</p>
 
 ### 1.3.3 Data augmentation
 Due to limited training set of only 3800 images, we decided to enlarge the dataset with augmented images. Therefore, following the _Oversampling_ step, the dataset was enlarged with augmented images acquired by randomly drawing 300 images from each class and randomly apply one of the following transformations:
