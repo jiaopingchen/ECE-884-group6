@@ -48,7 +48,11 @@ Due to limited training set of only 3800 images, we decided to enlarge the datas
 
 
 ### 1.3.4 Classifier
-We build two image classifiers `CNN` and `Inception-ResNet v2` that can label various types of plant/weed images with the highest accuracy being 93.2%.
+We build two image classifiers `CNN` and `Inception-ResNet v2` that can label various types of plant/weed images with the highest accuracy being 93.77%.
+
+##### CNN
+
+##### Inception-ResNet v2
 
 ### 1.3.5 Result
 Method | Test accuracy
@@ -75,7 +79,7 @@ For the balance dataset, we used the same model set up with the unbalanced data 
 ### 1.4.3 CNN balanced dataset result
 <p align="center">
 <img src="doc/Deep_CNN1.PNG" width="600" ><br>
-<b>accuracy & val_accuracy vs epochs</b>
+![image](https://user-images.githubusercontent.com/33790914/116741914-a3b27d80-a9c4-11eb-9718-af0bb3a26189.png)
 </p>
 <p align="center">
 <img src="doc/Deep_CNN2.PNG" width="600"><br>
