@@ -106,13 +106,16 @@ For the training using Inception-V2 on the balanced dataset 'DeepWeed'. We perfo
 The result of Inception-v2 model is significanlty better than the CNN model.
 
 ### 1.4.6 Conclusion
-The pretrained model Inception-v2 shows significantly improvement over the CNN model. There is a 13% accuracy increase. At the same time, the Inception_v2 only trained for 50 epochs, it is less time consuming than the CNN model to achieve a same or better accuracy.
+The result is the same with our expection. The pretrained model Inception-v2 shows significantly improvement over the CNN model. There is a 13% accuracy increase. At the same time, the Inception_v2 only trained for 50 epochs, it is less time consuming than the CNN model to achieve a same or better accuracy.
 
 
 
 
 # References
-[1] Xu. et al, “WeMix: How to Better Utilize Data Augmentation” arXiv:2010.01267 [cs], Oct. 2020.
+T. M. Giselsson, R. N. Jørgensen, P. K. Jensen, M. Dyrmann, and H. S. Midtiby, “A Public Image Database for Benchmark of Plant Seedling Classification Algorithms,” arXiv.org, 15-Nov-2017. [Online]. Available: https://arxiv.org/abs/1711.05458. [Accessed: 30-Apr-2021]. 
+
+“A. Olsen, D. A. Konovalov, B. Philippa, P. Ridd, J. C. Wood, J. Johns, W. Banks, B. Girgenti, O. Kenny, J. Whinney, B. Calvert, M. Rahimi Azghadi, and R. D. White, “DeepWeeds: A Multiclass Weed Species Image Dataset for Deep Learning,” Scientific Reports, vol. 9, no. 2058, 2 2019. [Online]. Available: https://doi.org/10.1038/s41598-018-38343-3 ”
+
 
 
 
