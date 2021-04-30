@@ -109,6 +109,7 @@ The result of Inception-ResNet v2 model is significanlty better than the CNN mod
 The result is the same with our expectation. The pretrained model Inception-v2 shows significantly improvement over the CNN model. There is a 13% accuracy increase. At the same time, the Inception_v2 only trained for 50 epochs, it is less time consuming than the CNN method to achieve a same or better accuracy.
 
 
+# 2. Usage
 
 
 # References
