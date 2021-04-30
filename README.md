@@ -88,7 +88,7 @@ For the balance dataset, we used the same model set up with the unbalanced data 
 Overall, the result of the CNN classifier trained on the DeepWeed data set is not bad.
 
 ### 1.4.4 Inception balanced dataset setup
-For the training using Inception-V2 on the balanced dataset 'DeepWeed'. We performed 50 epochs, and the batch size was seted to 32.
+For the training using Inception-ResNet v2 on the balanced dataset 'DeepWeed'. We performed 50 epochs, and the batch size was seted to 32.
 
 ### 1.4.5 Inception balanced dataset result
 <p align="center">
@@ -103,7 +103,7 @@ For the training using Inception-V2 on the balanced dataset 'DeepWeed'. We perfo
 <img src="doc/Deep_INC3.PNG" width="600"><br>
 <b>scores & confusion matrix</b>
 </p>
-The result of Inception-v2 model is significanlty better than the CNN model.
+The result of Inception-ResNet v2 model is significanlty better than the CNN model.
 
 ### 1.4.6 Conclusion
 The result is the same with our expectation. The pretrained model Inception-v2 shows significantly improvement over the CNN model. There is a 13% accuracy increase. At the same time, the Inception_v2 only trained for 50 epochs, it is less time consuming than the CNN method to achieve a same or better accuracy.
