@@ -77,14 +77,14 @@ For the balance dataset, we used the same model set up with the unbalanced data 
 <p style="text-align:center">accuracy & val_accuracy vs epochs</p>
 
 <p align="center">
-<img src="doc/Deep_CNN2.PNG" width="600">
-<center>accuracy test result</center>  
+<img src="doc/Deep_CNN2.PNG" width="600"> 
 </p>
+<center>accuracy test result</center> 
 
 <p align="center">
 <img src="doc/Deep_CNN3.PNG" width="600">
-<center>scores & confusion matrix</center>
 </p>
+<center>scores & confusion matrix</center>
 
 # Usage
 
