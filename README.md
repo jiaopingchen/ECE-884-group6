@@ -17,6 +17,9 @@ We preprocess the 4750 images by resizing (150 x 150), masking, transforming to 
 <p align="center">
 <img src="doc/fastmoe_data_parallel.png" width="600">
 </p>
+
+From the resulting plot above, it can be observed that 4750 images with 12 labels are well mixed and hard to differentiate by simply projecting images to 2-dim space.
+
 ### 1.3.1 Oversampling minority classes
 
 ### 1.3.2 Data augmentation
